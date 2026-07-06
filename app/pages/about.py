@@ -64,14 +64,23 @@ def render_about():
     st.markdown("</div>", unsafe_allow_html=True)
 
     st.markdown('<div class="card">', unsafe_allow_html=True)
-    st.markdown('<div class="card-title">Contacts</div>', unsafe_allow_html=True)
-    st.write("**Email :** a.aitouaali@edu.umi.ac.ma")
-    st.write("**Téléphone :** +212 6 27 10 28 54")
-    st.write("**LinkedIn :** à compléter")
-    st.write("**ORCID :** à compléter")
-    st.write("**ResearchGate :** à compléter")
-    st.markdown("</div>", unsafe_allow_html=True)
+    st.markdown('<div class="card-title">Contact</div>', unsafe_allow_html=True)
 
+    st.markdown(
+        """
+        **Email :** [a.aitouaali@edu.umi.ac.ma](mailto:a.aitouaali@edu.umi.ac.ma)  
+
+        **Téléphone :** +212 6 27 10 28 54  
+
+        **GitHub :** [Amine-Aito03](https://github.com/Amine-Aito03)  
+
+        **Projet :** AITONET BRAIN TUMOR  
+
+        **Statut :** Master 2 — Mathématiques Appliquées et Épidémiologie
+        """
+    )
+
+    st.markdown("</div>", unsafe_allow_html=True)
     st.markdown(
         """
         <div class="warning">
