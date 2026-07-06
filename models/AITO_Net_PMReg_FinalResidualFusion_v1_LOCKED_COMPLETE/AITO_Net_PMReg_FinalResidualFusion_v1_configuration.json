@@ -1,0 +1,39 @@
+{
+    "model_name": "AITO_Net_PMReg_FinalResidualFusion_v1",
+    "created_at": "2026-06-15T02:58:20.079538",
+    "architecture": "Residual gated fusion: R7B anchor + PM-Regularized Swin correction",
+    "selection_rule": "Maximum validation accuracy; minimum validation loss as tie-breaker",
+    "test_used_for_training": false,
+    "source_models": {
+        "rgb": "/kaggle/working/results/checkpoints/BackboneResidualGatedFusion_v3.pth",
+        "rgb_sha256": "fb2bf12eb9ed3f55331578e54d39b3a0faefb6963f15708043d1ca3bdf75c43b",
+        "swin": "/kaggle/working/results/AITO_PM_REGULARIZED/SWIN_T_REGULARIZED/checkpoints/AITO_PM_Regularized_SwinT.pth",
+        "swin_sha256": "1e07d0d9a1c9b342c945ad7aba6185440701a9211e41a1826a8abd7358e44e74"
+    },
+    "dimensions": {
+        "rgb_feature": 384,
+        "swin_feature": 768,
+        "rgb_projection": 256,
+        "swin_projection": 256,
+        "context": 64,
+        "fusion_hidden": 384,
+        "final_feature": 256
+    },
+    "training": {
+        "maximum_epochs": 50,
+        "patience": 10,
+        "batch_size": 128,
+        "learning_rate": 0.0002,
+        "weight_decay": 0.0001,
+        "label_smoothing": 0.02,
+        "distillation_lambda": 0.03,
+        "distillation_temperature": 2.0,
+        "residual_regularization": 0.0001,
+        "gate_regularization": 0.0001
+    },
+    "split": {
+        "train": 4480,
+        "validation": 1120,
+        "test": 1600
+    }
+}

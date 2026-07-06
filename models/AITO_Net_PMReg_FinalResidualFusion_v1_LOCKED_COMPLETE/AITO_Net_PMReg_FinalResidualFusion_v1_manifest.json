@@ -1,0 +1,143 @@
+{
+    "model_name": "AITO_Net_PMReg_FinalResidualFusion_v1",
+    "created_at": "2026-06-15T02:58:36.356702",
+    "status": "LOCKED_COMPLETE_READY_FOR_CALIBRATION_AND_OOD",
+    "metrics": {
+        "model_name": "AITO_Net_PMReg_FinalResidualFusion_v1",
+        "best_epoch": 24,
+        "best_validation_accuracy": 0.9839285714285714,
+        "best_validation_loss": 0.06373690813779831,
+        "test_loss": 0.06413979552686215,
+        "test_accuracy": 0.986875,
+        "macro_precision": 0.986891508703506,
+        "macro_recall": 0.9868750000000001,
+        "macro_f1": 0.9868693146231982,
+        "weighted_f1": 0.9868693146231982,
+        "correct_predictions": 1579,
+        "incorrect_predictions": 21,
+        "mean_gates": {
+            "glioma": 0.7926695942878723,
+            "meningioma": 0.7924678325653076,
+            "notumor": 0.8594521880149841,
+            "pituitary": 0.8083925843238831
+        },
+        "per_class_metrics": {
+            "glioma": {
+                "precision": 0.9850374064837906,
+                "recall": 0.9875,
+                "f1_score": 0.9862671660424469,
+                "support": 400,
+                "correct": 395
+            },
+            "meningioma": {
+                "precision": 0.9898734177215189,
+                "recall": 0.9775,
+                "f1_score": 0.9836477987421384,
+                "support": 400,
+                "correct": 391
+            },
+            "notumor": {
+                "precision": 0.9826302729528535,
+                "recall": 0.99,
+                "f1_score": 0.9863013698630136,
+                "support": 400,
+                "correct": 396
+            },
+            "pituitary": {
+                "precision": 0.9900249376558603,
+                "recall": 0.9925,
+                "f1_score": 0.9912609238451935,
+                "support": 400,
+                "correct": 397
+            }
+        },
+        "complementarity": {
+            "r7b_correct": 1574,
+            "swin_correct": 1568,
+            "final_correct": 1579,
+            "swin_correct_when_r7b_wrong": 12,
+            "r7b_correct_when_swin_wrong": 18,
+            "both_wrong": 14,
+            "both_correct": 1556
+        },
+        "checkpoint_matches_model": true,
+        "training_duration_seconds": 12.94996976852417,
+        "completed_at": "2026-06-15T02:58:33.802335"
+    },
+    "source_hashes": {
+        "r7b": "fb2bf12eb9ed3f55331578e54d39b3a0faefb6963f15708043d1ca3bdf75c43b",
+        "swin": "1e07d0d9a1c9b342c945ad7aba6185440701a9211e41a1826a8abd7358e44e74"
+    },
+    "files": [
+        {
+            "name": "AITO_Net_PMReg_FinalResidualFusion_v1.pth",
+            "size_bytes": 2629527,
+            "sha256": "0240ec5040a19d922cfd74fffb8cffa828405384f676c313ccaf3c23baf94776"
+        },
+        {
+            "name": "AITO_Net_PMReg_FinalResidualFusion_v1_best_checkpoint.pth",
+            "size_bytes": 7889839,
+            "sha256": "a69a25df9872706ee3b34d4b7f6ccd848b0b3806ccf783c78b8d85bb15a99132"
+        },
+        {
+            "name": "AITO_Net_PMReg_FinalResidualFusion_v1_last_checkpoint.pth",
+            "size_bytes": 7889455,
+            "sha256": "058109b898321e318ad5b05cf01f1adf4c831f54f1ea915923d46c15b8237738"
+        },
+        {
+            "name": "AITO_Net_PMReg_FinalResidualFusion_v1_history.json",
+            "size_bytes": 7550,
+            "sha256": "55dcec76e0f0ce28fa7d698a39b69bdd225aad1de17de516defced0af620f21a"
+        },
+        {
+            "name": "AITO_Net_PMReg_FinalResidualFusion_v1_metrics.json",
+            "size_bytes": 1924,
+            "sha256": "b316dc6c223e4abff8ce896abfc127f1d2dd5342b8219b192bf20c9ff19f2f7e"
+        },
+        {
+            "name": "AITO_Net_PMReg_FinalResidualFusion_v1_report.txt",
+            "size_bytes": 623,
+            "sha256": "b111a5fdb42fec6de648a81dfe91281dac8269658f94072132b201c0aff7aa35"
+        },
+        {
+            "name": "AITO_Net_PMReg_FinalResidualFusion_v1_predictions.npz",
+            "size_bytes": 85531,
+            "sha256": "f3abbcfa299032b2886302310c8825f3c23e25b6c3213fc4b45df8892b42e521"
+        },
+        {
+            "name": "AITO_Net_PMReg_FinalResidualFusion_v1_configuration.json",
+            "size_bytes": 1438,
+            "sha256": "542f9cddab4bb4f127ecd686752563aa4b55624be291701951d51a1e66600df9"
+        },
+        {
+            "name": "AITO_Net_PMReg_FinalResidualFusion_v1_loss.png",
+            "size_bytes": 162826,
+            "sha256": "0a9c77d14a2d81da142fe2007ff9409f7c359f2cf915389ca849538fed72d482"
+        },
+        {
+            "name": "AITO_Net_PMReg_FinalResidualFusion_v1_accuracy.png",
+            "size_bytes": 105987,
+            "sha256": "1ddd2f33bfd5cb900231610504baf6aa10a1abbb8988eca9f95fd02e9492a593"
+        },
+        {
+            "name": "AITO_Net_PMReg_FinalResidualFusion_v1_confusion_matrix.png",
+            "size_bytes": 149814,
+            "sha256": "4c7ff27ec26939e11c06f74b9ae37dfe04ed9d1c0df48d3fd14b15c6963494d5"
+        },
+        {
+            "name": "AITO_Net_PMReg_FinalResidualFusion_v1_mean_gates.png",
+            "size_bytes": 72898,
+            "sha256": "4dd391678a5d1647a8132f43ba3ca7aad0f187e22a81a3c4d062afd7ae1afe0e"
+        },
+        {
+            "name": "BackboneResidualGatedFusion_v3.pth",
+            "size_bytes": 5764821,
+            "sha256": "fb2bf12eb9ed3f55331578e54d39b3a0faefb6963f15708043d1ca3bdf75c43b"
+        },
+        {
+            "name": "AITO_PM_Regularized_SwinT.pth",
+            "size_bytes": 111559775,
+            "sha256": "1e07d0d9a1c9b342c945ad7aba6185440701a9211e41a1826a8abd7358e44e74"
+        }
+    ]
+}

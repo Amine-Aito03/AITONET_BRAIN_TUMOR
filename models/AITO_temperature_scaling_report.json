@@ -1,0 +1,22 @@
+{
+    "temperature_learned_on": "validation",
+    "temperature": 0.8196617960929871,
+    "validation": {
+        "accuracy": 0.9839285612106323,
+        "ece_before": 0.020625095521765086,
+        "ece_after": 0.011428177383329212,
+        "mce_before": 0.5664716958999634,
+        "mce_after": 0.625813364982605
+    },
+    "test": {
+        "accuracy_before": 0.986875,
+        "accuracy_after": 0.986875,
+        "ece_before": 0.01697189791875632,
+        "ece_after": 0.005046510383403973,
+        "mce_before": 0.35744782122106433,
+        "mce_after": 0.2940314276722419,
+        "brier_before": 0.02359064278089825,
+        "brier_after": 0.0236206691595912
+    },
+    "note": "Temperature fitted on validation only; test used only for final evaluation."
+}
